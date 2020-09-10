@@ -1,0 +1,36 @@
+
+@font-face {
+	font-family: "Montserrat-Light";
+	src: local("Montserrat-Light"), 
+		 local("Montserrat-Light"), 
+		 url("../fonts/montserrat-light-webfont.woff2") format("woff2"), 
+		 url("../fonts/montserrat-light-webfont.woff") format("woff"),
+		 url("../fonts/Montserrat-Light.svg") format("svg"),
+		 url("../fonts/Montserrat-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: local("Montserrat-Regular"), 
+		 local("Montserrat-Regular"), 
+		 url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), 
+		 url("../fonts/montserrat-regular-webfont.woff") format("woff"),
+		 url("../fonts/Montserrat-Regular.svg") format("svg"),
+		 url("../fonts/Montserrat-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Parisienne-Regular";
+	src: local("Parisienne-Regular"), 
+		 local("Parisienne-Regular"),
+		 url("../fonts/parisienne-regular-webfont.woff2") format("woff2"), 
+		 url("../fonts/parisienne-regular-webfont.woff") format("woff"),
+		 url("../fonts/Parisienne-Regular.svg") format("svg"),
+		 url("../fonts/Parisienne-Regular.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}

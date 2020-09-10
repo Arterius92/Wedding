@@ -1,0 +1,41 @@
+@import "_fonts.scss";
+
+$width: 100%;
+$contentWidth: 1176px;
+
+$bodyColor: #FFFFFF;
+$whiteText: #FFFFFF;
+$titleColor: #333333;
+$textColorBlack: #111111;
+$textColorGray: #666666;
+$textColorLightGray: #7E7E7E;
+
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 360px) / 1440));
+  }
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / 1440));
+  }
+}
+
+@mixin Montserrat-Light {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+@mixin Montserrat-Regular {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+}
+@mixin Parisienne-Regular {
+  font-family: "Parisienne-Regular", sans-serif;
+  font-weight: 400;
+}
